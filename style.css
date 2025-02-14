@@ -347,7 +347,7 @@ header{
         font-size: 2.4rem;
     }
     .product-container {
-        grid-template-columns: 1fr 1fr; /* Two columns */
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (max-width:991px){
@@ -361,8 +361,8 @@ header{
         font-size: 2rem;
     }
     .product-container {
-        grid-template-columns: 1fr 1fr; /* Two columns */
-        gap: 1rem; /* Reduce gap */
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 }
 @media screen and (max-width:768px){
@@ -406,7 +406,7 @@ header{
         align-items: center;
     }
     .product-container {
-        grid-template-columns: 1fr; /* Single column */
+        grid-template-columns: 1fr;
         gap: 0.8rem;
     }
     
@@ -441,22 +441,22 @@ header{
         font-size: 1.2rem;
     }
     .product-container {
-        grid-template-columns: 1fr; /* Still single column */
-        gap: 0.5rem; /* Reduce gap for smaller screens */
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
     }
 
 }
 /*footer responsive*/
 @media screen and (max-width: 991px) {
     .footer {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     .footer {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr;
         text-align: center;
     }
 
@@ -487,14 +487,14 @@ header{
 
 @media screen and (max-width: 991px) {
     .customers-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     .customers-container {
-        grid-template-columns: 1fr; /* Single column */
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
     
