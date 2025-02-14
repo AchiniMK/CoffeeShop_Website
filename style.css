@@ -404,6 +404,9 @@ header{
     .home-text h1{
         margin-top: 55px;
     }
+    .home-text{
+        align-items: center;
+    }
     .about{
         align-items: center;
     }
