@@ -368,10 +368,6 @@ header{
     }
 }
 @media screen and (max-width:768px){
-    .home .home-img{
-        background: cover;
-        align-items: center;
-    }
     header{
         padding: 12px 4%;
     }
@@ -401,11 +397,15 @@ header{
     .navbar.active{
         top: 100%;
     }
+    .home-text {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
     .home-text h1{
         margin-top: 55px;
-    }
-    .home-text{
-        align-items: center;
+
     }
     .about{
         align-items: center;
