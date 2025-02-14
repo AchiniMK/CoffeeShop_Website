@@ -41,7 +41,7 @@ header{
     padding: 10px 100px;
     background: var(--text-color);
     transition: 0.5s linear;
-    box-sizing: border-box; /* Ensure padding doesn't increase width */
+    box-sizing: border-box; 
 
 }
 .logo img{
