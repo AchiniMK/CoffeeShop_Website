@@ -41,6 +41,8 @@ header{
     padding: 10px 100px;
     background: var(--text-color);
     transition: 0.5s linear;
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+
 }
 .logo img{
     width: 60px;
@@ -119,7 +121,6 @@ header{
     align-items: center;
     gap: 1.5rem;
     padding-top: 100px;
-    background: fill/cover;
 }
 .home-text h1{
     font-size: 3.4rem;
@@ -333,6 +334,9 @@ header{
     .home-text h1{
         font-size: 2.4rem;
     }
+    .product-container {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+    }
 }
 @media screen and (max-width:991px){
     header{
@@ -343,6 +347,10 @@ header{
     }
     .home-text h1{
         font-size: 2rem;
+    }
+    .product-container {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+        gap: 1rem; /* Reduce gap */
     }
 }
 @media screen and (max-width:768px){
@@ -382,6 +390,11 @@ header{
     .about{
         align-items: center;
     }
+    .product-container {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 0.8rem;
+    }
+    
 }
 @media screen and (max-width:360px){
     header{
@@ -412,4 +425,9 @@ header{
     .heading h2{
         font-size: 1.2rem;
     }
+    .product-container {
+        grid-template-columns: 1fr; /* Still single column */
+        gap: 0.5rem; /* Reduce gap for smaller screens */
+    }
+
 }
