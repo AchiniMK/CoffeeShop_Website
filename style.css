@@ -232,7 +232,7 @@ header{
 /*--customer--*/
 .customers-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -241,6 +241,7 @@ header{
     box-shadow: var(--box-shadow);
     border-radius: 0.5rem;
     text-align: center;
+
 }
 .customers-container .box p{
     font-size: 0.938rem;
@@ -477,5 +478,47 @@ header{
 
     .footer-box p, .footer-box li a {
         font-size: 0.875rem;
+    }
+}
+/*review section responsive*/
+
+@media screen and (max-width: 991px) {
+    .customers-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .customers-container {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 1rem;
+    }
+    
+    .customers-container .box {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .customers-container {
+        padding: 0 3%;
+    }
+    
+    .customers-container .box {
+        padding: 12px;
+    }
+    
+    .customers-container .box h2 {
+        font-size: 1rem;
+    }
+
+    .customers-container .box p {
+        font-size: 0.875rem;
+    }
+
+    .customers-container .box img {
+        width: 60px;
+        height: 60px;
     }
 }
