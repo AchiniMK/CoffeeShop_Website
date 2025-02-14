@@ -399,6 +399,9 @@ header{
     .navbar.active{
         top: 100%;
     }
+    .home-text h1{
+        margin-top: 55px;
+    }
     .about{
         align-items: center;
     }
