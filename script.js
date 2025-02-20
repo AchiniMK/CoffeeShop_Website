@@ -50,7 +50,7 @@ searchInput.addEventListener('input', function () {
 
 
 
-// Select Elements
+// cart
 const cart = document.querySelector(".cart");
 const cartIcon = document.querySelector("#cart-icon");
 const closeCart = document.querySelector("#close-cart");
