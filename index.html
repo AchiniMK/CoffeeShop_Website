@@ -27,15 +27,30 @@
      </ul>
      <!--Icons-->
      <div class="header-icons">
-        <i class='bx bx-cart-alt'></i>
+        <i class='bx bx-cart-alt' id="cart-icon" onclick="openCart()"></i>
         <i class='bx bx-search-alt-2' id="search-icon"></i>
     </div>
 
     <!--Search Box-->
     <div class="search-box">
-        <input type="search" placeholder="Search Here....">
+        <input type="search" id="searchInput" placeholder="Search Here....">
     </div>
+
+    <!-- Cart -->
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+      <div class="cart-content"></div>
+      <div class="total">
+        <span>Total:</span>
+        <span class="total-price">Rs.0</span>
+      </div>
+     <button class="btn-buy">Checkout</button>
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
+
+
   </header>
+
   <!-- Home Section -->
   <section class="home" id="home">
     <div class="home-text">
@@ -58,7 +73,6 @@
       <p>Velvet Bean was founded with a passion for exceptional coffee and a commitment to quality. What started as a small, family-run business has grown into a trusted source for premium coffee beans, carefully selected from the world’s finest farms. Our journey began with a simple goal: to bring the freshest, most flavorful beans to coffee lovers everywhere.</p>
       <p>Over the years, we have built strong relationships with ethical and sustainable coffee growers, ensuring that every bean we sell meets the highest standards. From rich, bold roasts to smooth, balanced blends, Velvet Bean is dedicated to offering the perfect cup for every preference.</p>
       <p>Today, Velvet Bean continues to thrive, blending tradition with innovation. We take pride in roasting our beans to perfection and delivering the ultimate coffee experience. Whether you're a casual drinker or a true connoisseur, we invite you to be part of our story—one cup at a time.</p>
-      <a href="#" class="btn">Learn More</a>
     </div>
    </section>
 
@@ -76,7 +90,7 @@
           <h3>Arebica Coffee</h3>
           <div class="content">
             <span>Rs.7500/=</span>
-            <a href="#">Add to Cart</a>
+            <a href="#products">Add to Cart</a>
           </div>
         </div>
         <div class="box">
@@ -84,7 +98,7 @@
           <h3>Botero</h3>
           <div class="content">
             <span>Rs.5650/=</span>
-            <a href="#">Add to Cart</a>
+            <a href="#products">Add to Cart</a>
           </div>
         </div>
         <div class="box">
@@ -92,7 +106,7 @@
           <h3>Patch Roast</h3>
           <div class="content">
             <span>Rs.7000/=</span>
-            <a href="#">Add to Cart</a>
+            <a href="#products">Add to Cart</a>
           </div>
         </div>
         <div class="box">
@@ -100,7 +114,7 @@
           <h3>Americano Pure</h3>
           <div class="content">
             <span>Rs.7400/=</span>
-            <a href="#">Add to Cart</a>
+            <a href="#products">Add to Cart</a>
           </div>
         </div>
         <div class="box">
@@ -108,7 +122,7 @@
           <h3>Sacred Grounds</h3>
           <div class="content">
             <span>Rs.6530/=</span>
-            <a href="#">Add to Cart</a>
+            <a href="#products">Add to Cart</a>
           </div>
         </div>
         <div class="box">
@@ -116,7 +130,7 @@
           <h3>Presto</h3>
           <div class="content">
             <span>Rs.5450/=</span>
-            <a href="#">Add to Cart</a>
+            <a href="#products">Add to Cart</a>
           </div>
         </div>
 

@@ -110,6 +110,79 @@ header{
     font-size: 1rem;
     font-weight: 500;
 }
+
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+    overflow-y: auto;
+  }
+  
+  .cart.active {
+    right: 0;
+  }
+  
+  .cart-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .cart-content {
+    margin-top: 20px;
+  }
+  
+  .cart-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .cart-img {
+    width: 50px;
+  }
+  
+  .cart-product-title {
+    flex: 1;
+    padding-left: 10px;
+  }
+  
+  .cart-price {
+    font-weight: bold;
+  }
+  
+  .cart-quantity {
+    width: 40px;
+    text-align: center;
+  }
+  
+  .btn-buy {
+    width: 100%;
+    background: #ff5e57;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #close-cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+
 /*--Home--*/
 .home{
     width: 100%;
