@@ -50,7 +50,7 @@ searchInput.addEventListener('input', function () {
 
 
 
-// cart
+// Cart
 const cart = document.querySelector(".cart");
 const cartIcon = document.querySelector("#cart-icon");
 const closeCart = document.querySelector("#close-cart");
@@ -98,7 +98,7 @@ function addItemToCart(title, price, imgSrc) {
     <img src="${imgSrc}" class="cart-img">
     <div class="cart-product-title">${title}</div>
     <span class="cart-price">${price}</span>
-    <input type="number" value="1" class="cart-quantity">
+    <input type="number" value="1" class="cart-quantity" min="1">
     <i class='bx bx-trash cart-remove'></i>
   `;
 
@@ -106,7 +106,12 @@ function addItemToCart(title, price, imgSrc) {
 
   // Add Event Listeners
   cartBox.querySelector(".cart-remove").addEventListener("click", removeCartItem);
-  cartBox.querySelector(".cart-quantity").addEventListener("change", updateTotal);
+  cartBox.querySelector(".cart-quantity").addEventListener("change", function () {
+    if (this.value < 1) {
+      this.value = 1;
+    }
+    updateTotal();
+  });
 }
 
 // Remove Item from Cart
@@ -126,6 +131,3 @@ function updateTotal() {
   
   document.querySelector(".total-price").innerText = "Rs." + total;
 }
-
-
-
